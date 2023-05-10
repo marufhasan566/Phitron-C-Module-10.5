@@ -1,3 +1,1 @@
-        tmp = MIN;
-        MIN = MAX;
-        MAX = tmp;
+            // is_palindrome++;

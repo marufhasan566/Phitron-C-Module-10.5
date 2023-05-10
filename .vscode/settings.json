@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "math.h": "c",
-        "stdio.h": "c"
-    }
+        "stdio.h": "c",
+        "random": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
