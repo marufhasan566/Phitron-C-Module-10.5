@@ -5,15 +5,36 @@ int main()
     char c[1000];
     scanf("%s", c);
     int i = 0, j = strlen(c) - 1, temp;
-    // int is_palindrome = 1;
+    int answer = 1;
     while (i < j)
     {
-        temp = c[i];
-        c[i] = c[j];
-        i++;
-        j--;
+        if (c[i] != c[j])
+        {
+            answer = 0;
+            break;
+        }
+        else
+        {
+            temp = c[i];
+            c[i] = c[j];
+            if (c[i] != c[j])
+            {
+                answer = 0;
+                break;
+            }
+            i++;
+            j--;
+        }
     }
-    printf("%s", c);
+    // printf("%s", c);
+    if (answer == 1)
+    {
+        printf("YES");
+    }
+    if (answer == 0)
+    {
+        printf("NO");
+    }
 
     return 0;
 }
